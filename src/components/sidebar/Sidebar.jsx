@@ -5,7 +5,7 @@ const Sidebar = ({sidebarVisible}) => {
   return (
     <div className={`border-end bg-white ${sidebarVisible ? '': 'd-none'}`} id="sidebar-wrapper">
       <div className="sidebar-heading border-bottom bg-light">
-        Start Bootstrap
+        Foodies
       </div>
       <div className="list-group list-group-flush">
         <Link
