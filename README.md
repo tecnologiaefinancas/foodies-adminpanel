@@ -1,4 +1,4 @@
-```markdown
+
 # Admin Panel for Consuming the Foodies API
 
 <a href="https://www.linkedin.com/in/natalia-feitosa-cga-cfp" target="_blank" style="text-decoration:none">
