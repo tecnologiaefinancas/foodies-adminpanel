@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { assets } from './../../assets/assets';
 assets
 
 const AddFood = () => {
+
+  const [image, setImage] = useState(false);
+
   return (
     <div className="mx-2 mt-2">
   <div className="row">
@@ -12,9 +15,9 @@ const AddFood = () => {
         <form>
         <div className="mb-3">
             <label htmlFor="image" className="form-label">
-                <img src={assets.upload} width={98} />
+                <img src={image ? URL.createObjectURL(image): assets.upload} width={98} />
             </label>
-            <input type="file" className="form-control" id="image" required hidden />
+            <input type="file" className="form-control" id="image" required hidden onChange={(e) => setImage(e.target.files[0])}/>
           </div>
           <div className="mb-3">
             <label htmlFor="name" className="form-label">Name</label>
