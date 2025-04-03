@@ -6,6 +6,7 @@ import MenuBar from "./components/menubar/MenuBar";
 import AddFood from "./pages/addfood/AddFood"; 
 import ListFood from "./pages/listfood/ListFood";
 import Orders from "./pages/orders/Orders";
+import { ToastContainer } from "react-toastify";
 
 const App = () => {
     const [sidebarVisible, setSidebarVisible] = useState(true);
@@ -20,6 +21,7 @@ const App = () => {
 
       <div id="page-content-wrapper">
         <MenuBar toggleSidebar={toggleSidebar}/>
+        <ToastContainer />
 
         <div className="container-fluid">
           <Routes>
